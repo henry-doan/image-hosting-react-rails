@@ -19,6 +19,7 @@ class Api::UsersController < ApplicationController
     end
     
     if user.save
+      AccountUpdateMailer.update_user(user).deliver
       render json: user
     else
 

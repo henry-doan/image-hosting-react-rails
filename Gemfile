@@ -15,10 +15,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise_token_auth', "~> 1.0.0"
 
 gem 'cloudinary'
+gem 'sendgrid'
 
 group :development, :test do
   gem 'pry'
   gem 'dotenv-rails'
+  gem 'letter_opener'
 end
 
 group :development do
